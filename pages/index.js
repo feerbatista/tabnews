@@ -1,12 +1,42 @@
 function Home() {
+  const containerStyle = {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    height: "100vh", // Isso garante que o conteúdo fique centralizado verticalmente
+  };
+
+  const textStyle = {
+    fontSize: "24px",
+    fontWeight: "bold",
+    marginBottom: "20px",
+  };
+
+  const buttonStyle = {
+    padding: "10px 20px",
+    fontSize: "16px",
+    textDecoration: "none",
+    backgroundColor: "#007bff",
+    color: "#fff",
+    borderRadius: "5px",
+    margin: "5px",
+  };
+
   return (
-    <div>
-      <h1>Welcome!</h1>
-      <p>Essa pessoa especial é você !</p>
-      <p>Me diga qual foi sua reação nos comentários</p>
-      <a href="https://github.com/feerbatista">Me siga no Github</a>
-      <br></br>
-      <a href="https://www.instagram.com/feerbatista98/">Meu instragram</a>
+    <div style={containerStyle}>
+      <div style={textStyle}>Prazer, Fernando</div>
+      <div>
+        <a href="https://github.com/feerbatista/" style={buttonStyle}>
+          GitHub
+        </a>
+        <a
+          href="https://www.instagram.com/feerbatista.png/"
+          style={buttonStyle}
+        >
+          Instagram
+        </a>
+      </div>
     </div>
   );
 }
