@@ -1,75 +1,206 @@
-function Home() {
-  const containerStyle = {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    position: "fixed",
-    top: "0",
-    left: "0",
-    width: "100vw",
-    height: "100vh",
-    backgroundImage: `url("https://images4.alphacoders.com/110/1108171.png")`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    margin: "0",
-    padding: "0",
-  };
+import React from "react";
 
-  const textStyle = {
-    textAlign: "center",
-    fontSize: "48px",
-    fontWeight: "bold",
-    color: "#fff",
-    marginBottom: "20px",
-  };
-
-  const buttonStyle = {
-    padding: "10px 20px",
-    fontSize: "16px",
-    textDecoration: "none",
-    backgroundColor: "#007bff",
-    color: "#fff",
-    borderRadius: "5px",
-    margin: "5px",
-  };
-
-  const homeStyle = {
-    margin: "0",
-    padding: "0",
-    height: "100%",
-  };
-
+const Home = () => {
   return (
-    <div style={homeStyle}>
-      <div style={containerStyle}>
-        <div style={textStyle}>Prazer, Fernando</div>
-        <div>
-          <a
-            href="https://github.com/feerbatista/"
-            style={buttonStyle}
-            target="_blank"
-          >
-            GitHub
-          </a>
-          <a
-            href="https://www.instagram.com/feerbatista.png/"
-            style={buttonStyle}
-            target="_blank"
-          >
-            Instagram
-          </a>
-          <a
-            href="https://api.whatsapp.com/send/?phone=5516999642837"
-            style={buttonStyle}
-            target="_blank"
-          >
-            Whatsapp
-          </a>
+    <div className="container">
+      <header className="menu">
+        <div className="logo">Tabnews</div>
+
+        <div className="menu-items">
+          <div className="search-bar">Pesquisar</div>
+          <a href="#">Login</a>
+          <a href="#">Cadastrar</a>
+          <a href="#">Relevantes</a>
+          <a href="#">Recentes</a>
+        </div>
+      </header>
+
+      <div className="content">
+        <ul>
+          <li>
+            1. O que vocês acham do mundo do PHP? (não é pergunta repetitiva e
+            sim um debate)
+          </li>
+        </ul>
+        <ul>
+          <li>
+            1. O que vocês acham do mundo do PHP? (não é pergunta repetitiva e
+            sim um debate)
+          </li>
+        </ul>
+        <ul>
+          <li>
+            1. O que vocês acham do mundo do PHP? (não é pergunta repetitiva e
+            sim um debate)
+          </li>
+        </ul>
+        <ul>
+          <li>
+            1. O que vocês acham do mundo do PHP? (não é pergunta repetitiva e
+            sim um debate)
+          </li>
+        </ul>
+        <ul>
+          <li>
+            1. O que vocês acham do mundo do PHP? (não é pergunta repetitiva e
+            sim um debate)
+          </li>
+        </ul>
+        <ul>
+          <li>
+            1. O que vocês acham do mundo do PHP? (não é pergunta repetitiva e
+            sim um debate)
+          </li>
+        </ul>
+        <ul>
+          <li>
+            1. O que vocês acham do mundo do PHP? (não é pergunta repetitiva e
+            sim um debate)
+          </li>
+        </ul>
+        <ul>
+          <li>
+            1. O que vocês acham do mundo do PHP? (não é pergunta repetitiva e
+            sim um debate)
+          </li>
+        </ul>
+        <ul>
+          <li>
+            1. O que vocês acham do mundo do PHP? (não é pergunta repetitiva e
+            sim um debate)
+          </li>
+        </ul>
+        <ul>
+          <li>
+            1. O que vocês acham do mundo do PHP? (não é pergunta repetitiva e
+            sim um debate)
+          </li>
+        </ul>
+        <ul>
+          <li>
+            1. O que vocês acham do mundo do PHP? (não é pergunta repetitiva e
+            sim um debate)
+          </li>
+        </ul>
+        <ul>
+          <li>
+            1. O que vocês acham do mundo do PHP? (não é pergunta repetitiva e
+            sim um debate)
+          </li>
+        </ul>
+        <div className="pagination">
+          <span>Anterior</span>
+          <span>Próximo</span>
         </div>
       </div>
+
+      <footer className="footer">
+        <div>© 2023 TabNews</div>
+        <div className="footer-links">
+          <a href="#">Contato</a>
+          <a href="#">GitHub</a>
+          <a href="#">Museu</a>
+          <a href="#">RSS</a>
+          <a href="#">Sobre</a>
+          <a href="#">Status</a>
+          <a href="#">Termos de Uso</a>
+        </div>
+      </footer>
+
+      <style jsx>{`
+
+        *{}
+        .container {
+          font-family: Arial, sans-serif;
+          max-width: 960px;
+          margin: 0 auto;
+          width:100vh
+          height:100wh
+        }
+
+        .menu {
+          display: flex;
+          justify-content: space-between ;
+          align-items: center;
+          background-color: #313131;
+          padding:5px;
+        }
+
+        .logo {
+          display:flex;
+          justify-content: center;
+          
+          align-items: center;
+
+          font-size: 1rem;
+          font-weight: bold;
+          color:#fff;
+        }
+
+        .menu-items {
+          display: flex;
+          justify-content: space-around ;
+          align-items: center;
+          font-size: 0.6rem;
+        }
+
+        .menu-items a {
+          margin-left: 10px;
+          color: #fff;
+          text-decoration: none;
+        }
+
+        .search-bar {
+          margin: 0 auto;
+          width: 250px;
+          color: #333;
+          border: 1px solid rgb(140, 149, 159);;
+          cursor: pointer;
+          text-align:end;
+          padding-right:15px;
+          color:#fff;
+        }
+
+        .content {
+          padding: 20px;
+        }
+
+        ul {
+          list-style-type: none;
+          padding: 0;
+        }
+
+        .pagination {
+          margin-top: 20px;
+          display:flex;
+          justify-content:center;
+          align-items:cemter;
+        }
+
+        .pagination span {
+          margin-right: 10px;
+          color: #333;
+          cursor: pointer;
+        }
+
+        .footer {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          justify-content: center;
+          padding: 10px;
+          margin-top: 20px;
+          background-color: transparent;
+        }
+
+        .footer-links a {
+          margin-right: 10px;
+          color: #333;
+          text-decoration: none;
+        }
+      `}</style>
     </div>
   );
-}
+};
 
 export default Home;
