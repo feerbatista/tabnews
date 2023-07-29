@@ -4,12 +4,23 @@ function Home() {
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    height: "100vh", // Isso garante que o conteúdo fique centralizado verticalmente
+    position: "fixed",
+    top: "0",
+    left: "0",
+    width: "100vw",
+    height: "100vh",
+    backgroundImage: `url("https://images4.alphacoders.com/110/1108171.png")`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    margin: "0",
+    padding: "0",
   };
 
   const textStyle = {
-    fontSize: "24px",
+    textAlign: "center",
+    fontSize: "48px",
     fontWeight: "bold",
+    color: "#fff",
     marginBottom: "20px",
   };
 
@@ -23,19 +34,39 @@ function Home() {
     margin: "5px",
   };
 
+  const homeStyle = {
+    margin: "0",
+    padding: "0",
+    height: "100%",
+  };
+
   return (
-    <div style={containerStyle}>
-      <div style={textStyle}>Prazer, Fernando</div>
-      <div>
-        <a href="https://github.com/feerbatista/" style={buttonStyle}>
-          GitHub
-        </a>
-        <a
-          href="https://www.instagram.com/feerbatista.png/"
-          style={buttonStyle}
-        >
-          Instagram
-        </a>
+    <div style={homeStyle}>
+      <div style={containerStyle}>
+        <div style={textStyle}>Prazer, Fernando</div>
+        <div>
+          <a
+            href="https://github.com/feerbatista/"
+            style={buttonStyle}
+            target="_blank"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://www.instagram.com/feerbatista.png/"
+            style={buttonStyle}
+            target="_blank"
+          >
+            Instagram
+          </a>
+          <a
+            href="https://api.whatsapp.com/send/?phone=5516999642837"
+            style={buttonStyle}
+            target="_blank"
+          >
+            Whatsapp
+          </a>
+        </div>
       </div>
     </div>
   );
